@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"allstartted\startup_stm32f103xb.o"
+"allstartted\main.o"
+"allstartted\stm32f1xx_it.o"
+"allstartted\stm32f1xx_hal_msp.o"
+"allstartted\ad9833.o"
+"allstartted\stm32f1xx_hal_gpio_ex.o"
+"allstartted\stm32f1xx_hal_tim.o"
+"allstartted\stm32f1xx_hal_tim_ex.o"
+"allstartted\stm32f1xx_hal_uart.o"
+"allstartted\stm32f1xx_hal.o"
+"allstartted\stm32f1xx_hal_rcc.o"
+"allstartted\stm32f1xx_hal_rcc_ex.o"
+"allstartted\stm32f1xx_hal_gpio.o"
+"allstartted\stm32f1xx_hal_dma.o"
+"allstartted\stm32f1xx_hal_cortex.o"
+"allstartted\stm32f1xx_hal_pwr.o"
+"allstartted\stm32f1xx_hal_flash.o"
+"allstartted\stm32f1xx_hal_flash_ex.o"
+"allstartted\stm32f1xx_hal_exti.o"
+"allstartted\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "AllStartted\AllStartted.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AllStartted.map" -o AllStartted\AllStartted.axf
